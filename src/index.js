@@ -12,7 +12,7 @@ module.exports = function check(str, bracketsConfig) {
     let lengthAf;
     
     for(let value of pairsBrackets){
-      const reg = new RegExp(value, flags:'g');
+      const reg = new RegExp(value, 'g');
       string = string.replace(reg, "");
       lengthAf = string.length;
       }
